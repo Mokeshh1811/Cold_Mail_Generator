@@ -1,32 +1,68 @@
-# 📧 Cold Mail Generator
-Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
+# Cold Email Generator
 
-**Imagine a scenario:**
+A streamlined and efficient Cold Email Generator built using **Llama 3.2 3B** model and **LangChain** modules, hosted locally with **Streamlit**. This tool is designed to assist Business Development Executives (BDEs) in crafting professional and personalized cold emails effortlessly.
 
-- Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
-- Atliq is Software Development company can provide a dedicated software development engineer to Nike. So, the business development executive (Mohan) from Atliq is going to reach out to Nike via a cold email.
+## Features
+- **AI-Powered Email Generation**: Utilizes Llama 3.2 3B model for generating contextually relevant and engaging email content.
+- **LangChain Integration**: Seamlessly manages prompt creation and response handling.
+- **User-Friendly Interface**: Developed with Streamlit for an intuitive and responsive user experience.
 
-![img.png](imgs/img.png)
+## Requirements
+Ensure you have the following installed before setting up the project:
 
-## Architecture Diagram
-![img.png](imgs/architecture.png)
+- Python 3.8 or above
+- pip (Python package installer)
 
-## Set-up
-1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
-
-
-2. To get started, first install the dependencies using:
-    ```commandline
-     pip install -r requirements.txt
-    ```
-   
-3. Run the streamlit app:
-   ```commandline
-   streamlit run app/main.py
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/cold-email-generator.git
+   cd cold-email-generator
    ```
-   
 
-Copyright (C) Codebasics Inc. All rights reserved.
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-**Additional Terms:**
-This software is licensed under the MIT License. However, commercial use of this software is strictly prohibited without prior written permission from the author. Attribution must be given in all copies or substantial portions of the software.
+3. Download and set up the Llama 3.2 3B model. Follow the instructions for acquiring the model weights and placing them in the appropriate directory as specified in the project configuration.
+
+## Usage
+1. Run the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
+
+2. Open the local Streamlit interface in your web browser at:
+   ```
+   http://localhost:8501
+   ```
+
+3. Input the necessary details (e.g., recipient name, company details, purpose) to generate a cold email tailored to your needs.
+
+## Project Structure
+```
+.
+├── app.py              # Main Streamlit application
+├── README.md           # Project documentation
+├── requirements.txt    # Python dependencies
+├── models/             # Directory for Llama model weights
+├── modules/            # Contains LangChain configurations
+└── utils/              # Helper functions and utilities
+```
+
+## Dependencies
+- **Llama 3.2 3B**
+- **LangChain**
+- **Streamlit**
+
+Refer to the `requirements.txt` file for a complete list of dependencies.
+
+## Contribution
+Contributions are welcome! Feel free to submit issues, feature requests, or pull requests to improve this project.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+Special thanks to the open-source community and the developers of Llama, LangChain, and Streamlit for their amazing tools and frameworks.
