@@ -62,7 +62,7 @@ Refer to the `requirements.txt` file for a complete list of dependencies.
 Contributions are welcome! Feel free to submit issues, feature requests, or pull requests to improve this project.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [](LICENSE).
 
 ## Acknowledgments
 Special thanks to the open-source community and the developers of Llama, LangChain, and Streamlit for their amazing tools and frameworks.
